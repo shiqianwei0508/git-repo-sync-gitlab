@@ -36,7 +36,7 @@ jobs:
         target-token: <target-token>
 ```
 
-GitLab Example (`.github/workflows/gitlabsync.yml`)
+GitLab Example ([`.github/workflows/gitlabsync.yml`](https://github.com/jauderho/git-repo-sync/blob/main/.github/workflows/gitlabsync.yml))
 
 ```yaml
 name: Gitlab Sync
