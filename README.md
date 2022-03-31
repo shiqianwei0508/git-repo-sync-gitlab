@@ -59,12 +59,11 @@ jobs:
         
     - uses: jauderho/git-repo-sync@63782025e80e84c48b25a1ee6bb9a22a3bd570d3 # v0.1.0
       with:
-        # Such as https://github.com/wangchucheng/git-repo-sync.git
         #target-url: ${{ secrets.GITLAB_URL }}
         target-url: https://gitlab.com/${{ github.repository }}.git
         # Such as jauderho
         #target-username: ${{ secrets.GITLAB_USERNAME }}
         target-username: ${{ github.actor }}
-        # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ACCESS_TOKEN }}
+        # Create a PAT on gitlab.com and store it in GitHub Secrets as GITLAB_TOKEN
         target-token: ${{ secrets.GITLAB_TOKEN }}
 ```
