@@ -1,10 +1,10 @@
-# Git Repo Sync
+# GitRepoSync
 
 ![license](https://img.shields.io/github/license/jauderho/git-repo-sync)
 
 Git Repo Sync enables you to synchronize code to other code management platforms, such as GitLab, etc.
 
-## Try Git Repo Sync
+## Try GitRepoSync
 
 You can use the following example as a template to create a new file with any name under `.github/workflows/`.
 
