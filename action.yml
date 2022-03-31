@@ -1,5 +1,5 @@
 name: 'GitRepoSync'
-description: 'GitRepoSync enables you to synchronize code to other code management platforms, such as GitLab, Gitee, etc.'
+description: 'GitRepoSync enables you to synchronize code to other code management platforms, such as GitLab, etc.'
 
 branding:
   icon: upload-cloud
