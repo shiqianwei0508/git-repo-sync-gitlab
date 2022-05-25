@@ -22,11 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Git Repo Sync
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 0
         
-    - uses: jauderho/git-repo-sync@63782025e80e84c48b25a1ee6bb9a22a3bd570d3
+    - uses: shiqianwei0508/git-repo-sync-gitlab@v0.3.1
       with:
         # Such as https://github.com/wangchucheng/git-repo-sync.git
         target-url: <target-url>
@@ -36,7 +36,7 @@ jobs:
         target-token: <target-token>
 ```
 
-GitLab Example ([`.github/workflows/gitlabsync.yml`](https://github.com/jauderho/git-repo-sync/blob/main/.github/workflows/gitlabsync.yml))
+GitLab Example ([`.github/workflows/gitlabsync.yml`](https://github.com/shiqianwei0508/git-repo-sync-gitlab/blob/main/.github/workflows/gitlabsync.yml))
 
 ```yaml
 name: Gitlab Sync
@@ -53,11 +53,11 @@ jobs:
     runs-on: ubuntu-20.04
     name: Git Repo Sync
     steps:      
-    - uses: actions/checkout@a12a3943b4bdde767164f792f33f40b04645d846 # v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 0
         
-    - uses: jauderho/git-repo-sync@b0dea30061093b153138cad58241ad55d711cf9b # v0.1.0
+    - uses: shiqianwei0508/git-repo-sync-gitlab@v0.3.1
       with:
         #target-url: ${{ secrets.GITLAB_URL }}
         target-url: https://gitlab.com/${{ github.repository }}.git
