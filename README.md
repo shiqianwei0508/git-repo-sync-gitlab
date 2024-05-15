@@ -1,4 +1,4 @@
-# Git Repo Sync Remix
+# Git Repo Sync Remix (forked from @wangchucheng)
 
 ![license](https://img.shields.io/github/license/jauderho/git-repo-sync)
 
