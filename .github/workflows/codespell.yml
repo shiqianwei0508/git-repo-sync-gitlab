@@ -20,13 +20,13 @@ jobs:
   build:
     name: Codespell
     # Set the agent to run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     # Load all steps #
     steps:
       # Checkout the code base #
       - name: Harden Runner
-        uses: step-security/harden-runner@248ae51c2e8cc9622ecf50685c8bf7150c6e8813 # v1
+        uses: step-security/harden-runner@c95a14d0e5bab51a9f56296a4eb0e416910cd350 # v1
         with:
           egress-policy: block
           disable-telemetry: true
@@ -34,14 +34,14 @@ jobs:
             github.com:443
           
       - name: Checkout Code
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2.4.0
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v2.4.0
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
       # Run Linter against code base #
       - name: Codespell
-        uses: codespell-project/actions-codespell@2391250ab05295bddd51e36a8c6295edb6343b0e # master
+        uses: codespell-project/actions-codespell@406322ec52dd7b488e48c1c4b82e2a8b3a1bf630 # master
         with:
           check_filenames: true
           ignore_words_file: .codespellignore
